@@ -1,0 +1,177 @@
+npx postcss style.css --use autoprefixer -o style.prefixed.css
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body{
+    background-image: url("https://tiemsachnhoxinh.net/wp-content/uploads/2025/10/Thien-tai-ben-trai-ke-dien-ben-phai.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    overscroll-behavior: none;
+}
+
+header{
+    width: 100vw;
+    height: 50px;
+    background-color: rgb(14, 115, 198);
+    border-bottom-left-radius: 14px;
+    border-bottom-right-radius: 14px;
+    display: flex;
+    position: fixed;
+    top: 0;
+    left: 0;
+    justify-content: left;
+    align-items: center;
+}
+
+main{
+    margin-top: 60px;
+    margin-bottom: 50px;
+    width: 100vw;
+    height: calc(100vh - 110px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+footer{
+    width: 100vw;
+    height: 40px;
+    background-color: rgb(14, 115, 198);
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    justify-content: center;
+    align-items: center;
+
+}
+
+a{ 
+    display: inline-block;
+    text-decoration: none;
+    margin-left: 35px;
+    width: auto;
+    height: 40px;
+    border: 1px dashed black;
+    border-radius: 14px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    text-align: center;
+    line-height: 40px;
+}
+
+a:hover{
+    border: 0.7px solid darkslateblue;
+    background-color: black;
+    
+    color: white;
+}
+
+a:focus{
+    border: 1px solid darkslateblue;
+    background-color: black;
+    color: white;
+}
+
+.a{
+    text-decoration-line: none;
+    display: inline-block;
+    margin-left: 35px;
+    width: 200px;
+    height: 40px;
+    background-color: black;
+    border: 1px dashed black;
+    border-radius: 14px;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    text-align: center;
+    line-height: 40px;
+    visibility: hidden;
+}
+
+.a:focus{
+    visibility: visible;
+    border: 1px solid darkslateblue;
+    
+    
+
+}
+article{
+    width: 90%;
+    height: 100%;
+    background-color: rgba(28, 25, 41, 0.7);
+    border-radius: 14px;
+
+    padding: 30px;
+    overflow: auto;
+    scrollbar-width: none;
+}
+
+.grd{
+    display: grid;
+    grid-template:
+        "Summary ViewOfReader" 1fr
+        /1fr 1fr;
+    /* grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(1fr); */
+    gap: 40px;
+}
+
+#Summary {
+  grid-area: Summary;
+}
+
+#ViewOfReader {
+  grid-area: ViewOfReader;
+}
+
+.gr{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: repeat(auto);
+    gap: 25px;
+}
+
+.gr figure:nth-child(2n + 3){
+    box-shadow: 10px;
+    outline: 2px dashed darkred;
+    outline-offset: 6px;
+}
+
+figure img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 14px;
+}
+
+h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 28px;
+    font-weight: bold;
+    color: rgb(105, 196, 227);
+}
+
+p{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: white;
+}
+
+li{
+     font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    color: white;
+}
+
+
