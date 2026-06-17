@@ -170,6 +170,20 @@ figure img {
     border-radius: 14px;
 }
 
+.h1{
+    width: auto;
+    hight: 40px;
+    text-align: center;
+    line-height: 19px;
+    padding: 2px;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 18.6px;
+    font-weight: bold;
+    color: black;
+    border: 2.5px dotted black;
+    border-radius: 14px;
+}
+
 h2{
     font-family: 'Courier New', Courier, monospace;
     font-size: 28px;
